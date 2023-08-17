@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
+
+.bg {
+	background: #b9b6d3; /* BORDER*/
+	background: #3e3c49; /* BORDER*/
+	background: #38cc8c; /* BUTTON*/
+}
+@layer {
+	.error-text-active {
+		@apply block;
+	}
+
+	.error-text-disable,
+	.error-img-disable {
+		@apply hidden;
+	}
+}

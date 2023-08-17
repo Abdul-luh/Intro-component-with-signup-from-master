@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link href="./dist/output.css" rel="stylesheet" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Intro component with sign up form</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body
+		class="bg-[url('../images/bg-intro-mobile.png')] bg-[rgba(255,122,122,0.8)] bg-top bg-no-repeat md:bg-[url('../images/bg-intro-desktop.png')] py-8 px-4">
+		<div class="root max-w-[1024px] w-full grid md:grid-cols-2 gap-8 mx-auto">
+			<div
+				class="flex flex-col text-center text-white items-center p-4 justify-center md:text-left">
+				<h1 class="text-5xl font-bold py-3">
+					Learn to code by watching others
+				</h1>
+				<p class="py-3 text-xl">
+					See how experienced developers solve problems in real-time. Watching
+					scripted tutorials is great, but understanding how developers think is
+					invaluable.
+				</p>
+			</div>
+
+			<div class="section-B">
+				<button
+					class="bg-[#6055a5] rounded-md text-xl text-white py-2 px-28 md:px-10 w-full mb-4">
+					<span class="font-medium"> Try it free 7 days</span> then $20/mo.
+					thereafter
+				</button>
+
+				<form action="" id="form" class="bg-white p-4 rounded-md">
+					<div class="text-right py-4">
+						<div
+							class="flex text-black border rounded-md items-center gap-2 border-[#b9b6d3] py-2 px-4">
+							<input
+								class="flex-grow outline-none border-none"
+								id="firstName"
+								type="text"
+								name="firstName"
+								placeholder="First Name"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								class="error-img-disable hidden w-4"
+								alt="errror logo" />
+						</div>
+						<p class="text-[#ff7a7a] error-text-disable text-sm">
+							this is required
+						</p>
+					</div>
+
+					<div class="text-right py-4">
+						<div
+							class="flex text-black border rounded-md items-center gap-2 border-[#b9b6d3] py-2 px-4">
+							<input
+								class="flex-grow outline-none border-none"
+								id="lastName"
+								type="text"
+								name="last name"
+								placeholder="last Name"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								class="error-img-disable hidden w-4"
+								alt="errror logo" />
+						</div>
+						<p class="text-[#ff7a7a] error-text-disable text-sm">
+							this is required
+						</p>
+					</div>
+
+					<div class="text-right py-4">
+						<div
+							class="flex text-black border rounded-md items-center gap-2 border-[#b9b6d3] py-2 px-4">
+							<input
+								class="flex-grow outline-none border-none"
+								id="email"
+								type="email"
+								name="email"
+								placeholder="email"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								class="error-img-disable hidden w-4"
+								alt="errror logo" />
+						</div>
+						<p class="text-[#ff7a7a] error-text-disable text-sm">
+							looks like this is not an email
+						</p>
+					</div>
+
+					<div class="text-right py-4">
+						<div
+							class="flex text-black border rounded-md items-center gap-2 border-[#b9b6d3] py-2 px-4">
+							<input
+								class="flex-grow outline-none border-none"
+								id="Password"
+								type="Password"
+								name="Password"
+								placeholder="Password"
+								required />
+							<img
+								src="./images/icon-error.svg"
+								class="error-img-disable hidden w-4"
+								alt="errror logo" />
+						</div>
+						<p class="text-[#ff7a7a] error-text-disable text-sm">
+							password cannot be empty
+						</p>
+					</div>
+
+					<button
+						type="submit"
+						id="submit"
+						class="py-2 px-4 uppercase w-full bg-[#38cc8c] text-white">
+						Claim your free trial
+					</button>
+					<!-- <input type="submit" value="Claim your free trial" /> -->
+					<small class="infoText">
+						By clicking the button, you are agreeing to our
+						<span class="font-bold text-[#ff7a7a]">Terms and Services</span>
+					</small>
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<p class="attribution py-8">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Abdullah Odulate</a>.
+			</p>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>
